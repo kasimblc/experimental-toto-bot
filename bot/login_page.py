@@ -21,7 +21,9 @@ class LoginPage(customtkinter.CTk):
         self.title("Easy Bot SporToto")
         self.geometry(f"{self.width}x{self.height}")
         self.resizable(False, False)
-        self.left_date = datetime(2024, 12, 31)  # YYYY, MM, DD formatında son kullanma tarihi
+        
+        # Sonradan kaldırılacak ve uygun yerde kullanılacak.
+        self.left_date = datetime(2029, 12, 29)  # YYYY, MM, DD formatında son kullanma tarihi
 
         self.key_file = "fernet_key.key"
         self.encrypted_credentials_file = "encrypted_credentials.json"
